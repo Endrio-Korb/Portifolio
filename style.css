@@ -161,6 +161,15 @@ section {
     border-radius: 10%;
 }
 
+.projetos-ocultos {
+    display: none;
+}
+
+.projeto-ativos {
+    display: grid;
+    transition: ease 3s;
+}
+
 #link-sobre, #link-habilidades {
     background-color: rgb(48, 48, 48);
 }
@@ -181,10 +190,7 @@ section {
     border: 1px solid rgb(0, 135, 169);
 }
 
-.projetos-ocultos {
-    display: none;
-    transition: all 1s;
-}
+
 
 .footer {
     display: flex;
