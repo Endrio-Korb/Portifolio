@@ -9,8 +9,8 @@ body {
 }
 
 /*  Estilo da barra de navegação */
-header {
-    position: -webkit-sticky; /* Necessário para funcionar no Safari */
+ header {
+    position: -webkit-sticky;   /* Necessário para funcionar no Safari  */
     position: sticky;
     top: 0;
     width: 100%;
@@ -19,8 +19,11 @@ header {
     justify-content: center;
     align-items: center;  
     padding: 30px 10%;
-    background-color: rgb(49, 49, 49);
+    background-color: transparent;
+    background-color: rgb(49, 49, 49); 
+    backdrop-filter: blur(5px); 
 }
+
 
 .navlinks li {
     display: inline-block;
@@ -40,11 +43,19 @@ header {
 
 /* ========== */
 
+section {
+    min-height: 90vh;
+    align-content: center;
+    background-color: rgb(27, 27, 27);
+}
+
 .grid-container {
     display: grid;
     grid-template-columns:auto auto;
     padding: 10px;
     justify-content: center;
+    /* min-height: 100vh; */
+    align-content: center;
 }
 
 .grid-row {
@@ -65,12 +76,6 @@ header {
 
 .grid {
     display: block;
-    align-content: flex-end;
-}
-
-#apresentacao {
-    margin-top: 35px;
-    margin-right: 15px;
 }
 
 .texto {
@@ -177,13 +182,28 @@ header {
 
 .projetos-ocultos {
     display: none;
+    transition: all 1s;
 }
 
 .projetos-ativos {
     display: block;
+    transition: all 1s;
 }
 
 .footer {
     display: flex;
     justify-content: center;
+}
+
+.hidden {
+    opacity: 0;
+    filter: blur(15px);
+    transition: all 1s;
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transition: all 1s;
+
 }

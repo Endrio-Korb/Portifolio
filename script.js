@@ -1,5 +1,5 @@
 var ver_mais = document.getElementById("ver-mais")
-var projetos = document.querySelectorAll(".projetos-ocultos")
+const projetos = document.querySelectorAll(".projetos-ocultos")
 
 function verMais(e) {
     if (ver_mais.innerHTML == "Ver mais") {
@@ -16,3 +16,19 @@ function verMais(e) {
         }
     }
 }
+
+
+
+const myObserver = new IntersectionObserver( (entries) => {
+    entries.forEach( (entry) => {
+        if ( entry.isIntersecting) {
+            entry.target.classList.add('show')
+        } else {
+            entry.target.classList.remove('show')
+        }
+    })
+})
+
+const elementos = document.querySelectorAll(".hidden")
+
+elementos.forEach( (elemento) => myObserver.observe(elemento))

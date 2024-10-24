@@ -8,7 +8,7 @@
   </head>
   <body>
     <header>
-      <nav>
+      <nav class="navbar">
         <ul class="navlinks">
           <li>
             <a href="">Inicio</a>
@@ -28,112 +28,118 @@
 
 
      <!-- Apresentação  -->
-    <div class="grid-container">
-        <div class="grid-row">
-            <div class="grid-item">
-                <div class="texto" id="apresentacao">
-                    <h2>Olá, me chamo</h2>
-                    <h1>Endrio Alex Korb</h1>
-                    <h2>sou desenvolvedor Front-End</h2>
-                </div>
-                <div class="links">
-                    <a id="linkedin" href="https://www.linkedin.com/in/endrio-alex-korb-ba2701199/">LinkedIn</a>
-                    <a id="github" href="https://github.com/Endrio-Korb">GitHub</a>
-                </div>
-            </div>
-            
-            <div class="grid-item">
-                <img id="foto" src="img/perfil.jpg" alt="" />
-            </div>
-        </div>
-    </div>
-                
+    <section>
+      <div class="grid-container">
+          <div class="grid-row">
+              <div class="grid-item">
+                  <div class="texto" id="apresentacao">
+                      <h2>Olá, me chamo</h2>
+                      <h1>Endrio Alex Korb</h1>
+                      <h2>sou desenvolvedor Front-End</h2>
+                  </div>
+                  <div class="links">
+                      <a id="linkedin" href="https://www.linkedin.com/in/endrio-alex-korb-ba2701199/">LinkedIn</a>
+                      <a id="github" href="https://github.com/Endrio-Korb">GitHub</a>
+                  </div>
+              </div>
+              
+              <div class="grid-item">
+                  <img id="foto" src="img/teste.webp" alt="" />
+              </div>
+          </div>
+      </div>
+    </section>
 
     <!-- Sobre mim -->
-    <div class="grid-container" id="link-sobre">
-        <div class="grid-row">
-            <div class="grid-item sobre-imagem">
-                <img id="foto-sobre" src="img/teste.webp" alt="" />
-            </div>
-            <div class="grid-item">
-                <h1 class="texto-sobre">Sobre mim</h1>
-                <p class="texto-sobre">Sou formado em Gestão da Tecnologia da Informação, fiz cursos técnicos para manutenção de computadores e notebooks, 
-                    conclui alguns cursos voltados a desenvolvimento de sistemas como HTML, CSS, Javascript e Python, atualmente estou 
-                    estudando Back-end em C# e Inglês avançado.
-                </p>
-            </div>
-        </div>
-    </div>
-        
+    <section class="hidden" id="link-sobre">
+      <div class="grid-container" >
+          <div class="grid-row">
+              <div class="grid-item sobre-imagem">
+                  <img id="foto-sobre" src="img/perfil.jpg" alt="" />
+              </div>
+              <div class="grid-item">
+                  <h1 class="texto-sobre">Sobre mim</h1>
+                  <p class="texto-sobre">Sou formado em Gestão da Tecnologia da Informação, fiz cursos técnicos para manutenção de computadores e notebooks, 
+                      conclui alguns cursos voltados a desenvolvimento de sistemas como HTML, CSS, Javascript e Python, atualmente estou 
+                      estudando Back-end em C# e Inglês avançado.
+                  </p>
+              </div>
+          </div>
+      </div>
+    </section>
 
      <!-- Porte de projetos prontos ou em breve  -->
-    <div class="grid-container grid" id="link-projetos">
-        <div class="grid-row">
-            <h2 class="texto" id="titulo-projetos">Meus Projetos</h2>
-        </div>
-        <div class="grid-row">
-            <div class="grid-item projetos">
-                <img src="img/embreve.png" alt="em breve">
-                <p class="texto">Em breve</p>
-            </div>
-            <div class="grid-item projetos">
-                <img src="img/embreve.png" alt="em breve">
-                <p class="texto">Em breve</p>
-            </div>
-            <div class="grid-item projetos">
-                <img src="img/embreve.png" alt="em breve">
-                <p class="texto">Em breve</p>
-            </div>
+    <section class="hidden">
+      <div class="grid-container grid" id="link-projetos">
+          <div class="grid-row">
+              <h2 class="texto" id="titulo-projetos">Meus Projetos</h2>
           </div>
           <div class="grid-row">
-            <div class="grid-item projetos projetos-ocultos">
-                <img src="img/embreve.png" alt="em breve">
-                <p class="texto">Em breve</p>
+              <div class="grid-item projetos">
+                  <img src="img/embreve.png" alt="em breve">
+                  <p class="texto">Em breve</p>
+              </div>
+              <div class="grid-item projetos">
+                  <img src="img/embreve.png" alt="em breve">
+                  <p class="texto">Em breve</p>
+              </div>
+              <div class="grid-item projetos">
+                  <img src="img/embreve.png" alt="em breve">
+                  <p class="texto">Em breve</p>
+              </div>
             </div>
-            <div class="grid-item projetos projetos-ocultos">
-                <img src="img/embreve.png" alt="em breve">
-                <p class="texto">Em breve</p>
+            <div class="grid-row">
+              <div class="grid-item projetos projetos-ocultos">
+                  <img src="img/embreve.png" alt="em breve">
+                  <p class="texto">Em breve</p>
+              </div>
+              <div class="grid-item projetos projetos-ocultos">
+                  <img src="img/embreve.png" alt="em breve">
+                  <p class="texto">Em breve</p>
+              </div>
+              <div class="grid-item projetos projetos-ocultos">
+                  <img src="img/embreve.png" alt="em breve">
+                  <p class="texto">Em breve</p>
+              </div>
             </div>
-            <div class="grid-item projetos projetos-ocultos">
-                <img src="img/embreve.png" alt="em breve">
-                <p class="texto">Em breve</p>
+            <div class="grid-row">
+              <button onclick="verMais()" id="ver-mais">Ver mais</button>
             </div>
-          </div>
-          <div class="grid-row">
-            <button onclick="verMais()" id="ver-mais">Ver mais</button>
-          </div>
-    </div>
+      </div>
+    </section>
 
        <!-- Descrição das minhas habilidades  -->
-    <div class="grid-container grid" id="link-habilidades">
-
-      <div class="grid-row">
-        <h2 class="texto">Habilidades</h2>
+    <section class="hidden"  id="link-habilidades">
+      <div class="grid-container grid">
+        
+        <div class="grid-row">
+          <h2 class="texto">Habilidades</h2>
+        </div>
+        
+        <div class="grid-row">
+          <div class="grid-item">
+            <img src="img/logo-python.png" alt="miniatura" class="miniatura">
+            <p class="texto">Python</p>
+          </div>
+          <div class="grid-item">
+            <img src="img/logo-django.png" alt="miniatura" class="miniatura">
+            <p class="texto">Django</p>
+          </div>
+          <div class="grid-item">
+            <img src="img/logo-html.png" alt="miniatura" class="miniatura">
+            <p class="texto">HTML</p>
+          </div>
+          <div class="grid-item">
+            <img src="img/logo-css.png" alt="miniatura" class="miniatura">
+            <p class="texto">CSS</p>
+          </div>
+          <div class="grid-item">
+            <img src="img/logo-javascript.png" alt="miniatura" class="miniatura">
+            <p class="texto">Javascript</p>
+          </div>
+        </div>
       </div>
-
-      <div class="grid-row">
-        <div class="grid-item">
-          <img src="img/logo-python.png" alt="miniatura" class="miniatura">
-          <p class="texto">Python</p>
-        </div>
-        <div class="grid-item">
-          <img src="img/logo-django.png" alt="miniatura" class="miniatura">
-          <p class="texto">Django</p>
-        </div>
-        <div class="grid-item">
-          <img src="img/logo-html.png" alt="miniatura" class="miniatura">
-          <p class="texto">HTML</p>
-        </div>
-        <div class="grid-item">
-          <img src="img/logo-css.png" alt="miniatura" class="miniatura">
-          <p class="texto">CSS</p>
-        </div>
-        <div class="grid-item">
-          <img src="img/logo-javascript.png" alt="miniatura" class="miniatura">
-          <p class="texto">Javascript</p>
-        </div>
-      </div>
-    </div>
+    </section>
 
     <footer>
       <div class="footer">
