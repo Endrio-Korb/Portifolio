@@ -14,7 +14,7 @@ a {
 
 /*  Estilo da barra de navegação */
  header {
-    position: -webkit-sticky;   /* Necessário para funcionar no Safari  */
+    position: -webkit-sticky;
     position: sticky;
     top: 0;
     width: 100%;
@@ -58,7 +58,6 @@ section {
     grid-template-columns:auto auto;
     padding: 10px;
     justify-content: center;
-    /* min-height: 100vh; */
     align-content: center;
 }
 
@@ -170,6 +169,15 @@ section {
     height: 200px;
 }
 
+.projetos-ocultos {
+    display: none;
+}
+
+.projeto-ativos {
+    display: grid;
+    transition: ease 3s;
+}
+
 #link-sobre, #link-habilidades {
     background-color: rgb(48, 48, 48);
 }
@@ -190,15 +198,7 @@ section {
     border: 1px solid rgb(0, 135, 169);
 }
 
-.projetos-ocultos {
-    display: none;
-    transition: all 1s;
-}
 
-.projetos-ativos {
-    display: block;
-    transition: all 1s;
-}
 
 .footer {
     display: flex;
